@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Adopción de Mascotas - Administrador</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1>Administrador</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="registro.html">Registro</a>
+        <a href="solicitud.html">Solicitud</a>
+        <a href="admin.html">Administrador</a>
+    </nav>
+</header>
+
+<main>
+    <section id="agregar-mascota">
+        <h2>Agregar Mascota</h2>
+        <form id="form-mascota" class="form-container">
+            <label>Nombre:
+                <input name="nombre" required />
+            </label>
+            <label>Tipo:
+                <input name="tipo" required />
+            </label>
+            <label>Edad:
+                <input name="edad" type="number" min="0" required />
+            </label>
+            <label>Descripción:
+                <input name="descripcion" />
+            </label>
+            <label>Estado:
+                <select name="estado" required>
+                    <option value="disponible">Disponible</option>
+                    <option value="adoptado">Adoptado</option>
+                </select>
+            </label>
+            <button type="submit">Agregar Mascota</button>
+        </form>
+    </section>
+    <section>
+        <h2>Solicitudes de Adopción</h2>
+        <ul id="lista-solicitudes"></ul>
+    </section>
+</main>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Adopción de Mascotas - Solicitud</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1>Solicitud de Adopción</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="registro.html">Registro</a>
+        <a href="solicitud.html">Solicitud</a>
+        <a href="admin.html">Administrador</a>
+    </nav>
+</header>
+
+<main>
+    <form id="form-solicitud" class="form-container">
+        <label>Persona:
+            <select name="idPersona" id="select-persona" required>
+                <option value="">Selecciona una persona</option>
+            </select>
+        </label>
+        <label>Mascota:
+            <select name="idMascota" id="select-mascota" required>
+                <option value="">Selecciona una mascota</option>
+            </select>
+        </label>
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</main>
+
+<script src="js/solicitud.js"></script>
+</body>
+</html>
