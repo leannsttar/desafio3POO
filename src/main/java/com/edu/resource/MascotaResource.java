@@ -33,6 +33,6 @@ public class MascotaResource {
     @Transactional
     public void cambiarEstado(@PathParam("id") Long id, String nuevoEstado) {
         Mascota m = mascotaRepo.findById(id);
-        m.estado = Mascota.Estado.valueOf(nuevoEstado);
+        m.setEstado(nuevoEstado);
     }
 }
